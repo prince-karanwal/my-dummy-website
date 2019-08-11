@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: TimesNewRoman;
+  background: #f1f1f1;
+}
+
+#myimg {
+   
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 70%;
+}
+
+.nav{
+  position: fixed;
+  background: rgba(0,0,0,0.6);
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  top: 0;
+}
+
+.logo{
+  margin: 10px 50px;
+  height: 60px;
+}
+
+.menu{
+  float: right;
+  list-style: none;
+  margin: 20px;
+}
+
+.menu li{
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 18px;
+  font-family: TimesNewRoman;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #fff;
+}
+
+.menu li a:hover{
+  background: #04aeda;
+  border-bottom: 1px solid coral;
+  transition: .5s; 
+  border-radius: 4px;
+}
+
+.title{
+  position: relative;
+  text-align: center;
+  color: #fff;
+  top: 200px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.title h1{
+  font-size: 52px;
+  margin: 10px; 
+}
+
+.title p{
+  padding: 10px;
+}
+
+.title h1 span{
+  background: -webkit-linear-gradient(#0048ff, #0096ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+.left-side {   
+  float: left;
+  width: 75%;
+}
+
+
+.right-side {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+.image {
+  background-image: url('../images/bg10.jpg');
+  background-color: #aaa;
+  width: 92%;
+  padding: 20px;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.thumbnail-img{
+  background-image: url('../images/bg12.jpg');
+  height: 150px;
+}
+
+.image2{
+  background-image: url('../images/bg11.jpg');
+  height: 150px;
+}
+
+.image3{
+  background-image: url('../images/bg13.jpg');
+  height: 150px;
+}
+
+.image4{
+  background-image: url('../images/bg14.jpg');
+  height: 150px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.card h2{
+  margin-top: -10px;
+}
+
+.row{
+   top: 70%;
+   position: absolute;
+   left: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 800px) {
+  .left-side, .right-side {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#company{ 
+  color: white;
+  position: absolute; 
+  top: 210%; 
+  width: 100%;
+  background-color: #333333;
+  height: 230px;
+  left: 0;
+}
+
+#company .about{
+  position: absolute;
+  left: 35%;
+  top: 20px;
+  line-height: 40px;
+  width: 30%;
+  text-align: center;
+}
+
+#company .newsletter{
+  position: relative;
+  float: right;
+  top: -170px;
+  right: 60px;
+}
+#company .newsletter .para{
+    margin-top: 20px;
+}
+
+#company .newsletter form input{
+  color: #222;
+    border: 1px solid #dfe1e5;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 24px;
+    margin-top: 20px;
+}
+
+#company .newsletter form input:hover{
+  box-shadow: 0 1px 2px 2px #3098d7;
+  border-color: rgba(223,225,229,0);  
+}
+#company .newsletter form input:focus{
+  box-shadow: 0 1px 2px 2px #3098d7;
+  border-color: rgba(223,225,229,0);  
+  outline: none;
+}
+
+#company .newsletter form button{
+    color: white;
+    padding: 8px 16px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    background-color: #04aeda;
+    font-weight: bold;
+}
+
+#company .newsletter form button:hover {background-color: #3e8e41}
+
+#company .newsletter form button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px 5px 0 #666;
+  transform: translateY(4px);
+}
+
+#company .contact{
+  position: relative;
+  top: 30px;
+  margin-left: 70px;
+}
+
+#company .contact ul{
+  list-style: none;
+}
+
+
+#company .contact ul li i{
+  padding: 10px;
+  margin-left: -50px;
+}
+
+#main-footer{
+  color: white;
+  position: absolute; 
+  top: 245%; 
+  width: 100%;
+  background-color: #3098d7;
+  text-align: center;
+  left: 0;
+}
+
+.about-us{
+   top: 70%;
+   position: absolute;
+   left: 0;  
+}
+
+.main-body{
+  position: relative;
+  width: 75%;
+  left: 15%;
+}
+
+.card1 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.card1 h1 span{
+  color: #04aeda;
+}
+
+
+.card2 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 24px;
+  box-shadow: 5px 5px 5px 2px #04aeda;
+}
+
+.card2 form label{
+  font-size: 20px;
+}
+
+.card2 h1 span{
+  color: #04aeda;
+}
+
+.card2 form input, textarea {
+  width: 100%;
+  padding: 12px;
+  resize: vertical;
+  color: #222;
+  border: 1px solid #dfe1e5;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 24px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.card2 form input:hover{
+  box-shadow: 0 1px 2px 2px #3098d7;
+  border-color: rgba(223,225,229,0);  
+}
+.card2 form input:focus{
+  box-shadow: 0 1px 2px 2px #3098d7;
+  border-color: rgba(223,225,229,0);  
+  outline: none;
+}
+
+.card2 form textarea:hover{
+  box-shadow: 0 1px 2px 2px #3098d7;
+  border-color: rgba(223,225,229,0);  
+}
+.card2 form textarea:focus{
+  box-shadow: 0 1px 2px 2px #3098d7;
+  border-color: rgba(223,225,229,0);  
+  outline: none;
+}
+
+.card2 button{
+  padding: 12px 40px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 5px #999;
+  background-color: #04aeda;
+  font-weight: bold;
+  left: 40%;
+  position: relative;
+}
+
+.card2 button:hover {
+  background-color: #45a049;
+}
+
+.card2 button:hover {background-color: #3e8e41}
+
+.card2 button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px 5px 0 #666;
+  transform: translateY(4px);
+}
+
+.contact-us{
+   top: 80%;
+   position: absolute;
+   left: 0;  
+   width: 100%;
+}
+
+.contact-body{
+  position: relative;
+  width: 50%;
+  left: 25%;
+}
